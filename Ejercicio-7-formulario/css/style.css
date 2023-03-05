@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 * {
-    color: white;
+
     font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #161717;
+    color: white;
 }
 
 .container {
-    background-color: #161717;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -112,31 +115,33 @@ label span {
 .section-inputs label input {
     width: 80%;
     background-color: #212121;
-    border: none;
+    border: solid 1px transparent;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
-    font-size: 14pt;
+    font-size: 14pt; 
+    color: white;
 }
 label input {
     width: 90%;
     background-color: #212121;
-    border: none;
+    border: solid 1px transparent;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
     font-size: 14pt;
     transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+    color: white;
 }
 
 label input:hover {
-    background-color: #454045;
-    border: solid 1px #f3f3f4;
+    background-color: #454045; 
+    border: solid 1px #212121;
     box-shadow: 0 0 4px  #eb50ff4f;
 }
 label input:focus {
     background-color:  #454045;
-    border: solid 1px #f3f3f4;
+    border: solid 1px #212121;
     box-shadow: 0 0 4px #eb50ff4f;
 }
 
