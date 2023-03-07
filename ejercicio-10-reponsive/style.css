@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;  
+background-color: rgba(250, 247, 247, 0.938);
+}
+
+div.barra{
+    background-color: #060e3b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    margin: 1px;
+    font-size: 2rem;
+    
+}
+
+div.contenido{
+    padding: 10px;
+    flex-grow: 2;
+    font-size: 3rem;
+    color: rgb(6, 26, 16);
+    
+}
+
+@media (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    div.barra {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+}
